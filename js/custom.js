@@ -34,15 +34,6 @@ $(function(){
     $(".resume-download").tooltip();
 
     /*=========================================================================
-            Backstretch Background Slider
-    =========================================================================*/
-    $("#welcome").backstretch([
-        "http://placehold.it/1200x768",
-        "http://placehold.it/1200x768",
-        // "assets/images/your_pic.jpg" 
-    ], {duration: 5000, fade: 400});
-
-    /*=========================================================================
             Welcome & Header Height
     =========================================================================*/
     $("#welcome").css({'height':($(window).height())+'px'});

@@ -276,12 +276,13 @@ li {
 
 /* === Mobile Menu Bar === */
 .header .mobile-bar {
-    background: rgba(12,12,12,0.75);
+    background: rgb(12 12 12);
     color: #FFF;
-    height: 60px;
-    right: -59px;
+    height: 50px;
+    left: 100%;
+    top: 0;
     position: absolute;
-    width: 60px;
+    width: 100vh;
     z-index: 3;
 }
 
@@ -918,6 +919,7 @@ li {
     }
 }
 
+/* === Here comes the hamburger === */
 @media only screen and (max-width: 767px) {
     .welcome {
         padding: 60px !important;
@@ -932,12 +934,33 @@ li {
     }
 
     .resume .resume-item {
-        margin-top: 30px !important;
+        margin-top: 30px;
     }
 
     .blog .item .text {
         margin-top: 25px;
     }
+
+    .main-content {
+        margin-top: 50px;
+    }
+
+    .header .avatar {
+        width: 110px;
+        height: 110px;
+        margin: auto;
+    }
+
+    .header .name {
+        margin-top: 25px;
+    }
+
+    .header .name h1 {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
 }
 
 @media only screen and (max-width: 480px) {
