@@ -354,16 +354,18 @@ li {
     height: 100vh;
     width: 100vw;
     position: fixed;
-    left: 260px;
+    left: 0px;
     top: 0px;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    z-index: 1;
 }
 
-.transparent {
+.darkenizer.transparent {
     opacity: 0;
+    z-index: -1;
 }
 
 /*-----------------------------------------------------------------*/
