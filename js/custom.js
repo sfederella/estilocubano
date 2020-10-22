@@ -26,9 +26,15 @@ $(function(){
     =========================================================================*/
     $(".hamburger-menu, .main-nav ul li a").on( 'click', function() {
         $(".header").toggleClass("pushed");
+        $(".darkenizer").toggleClass("transparent");
         $('.bar').toggleClass('animate');
     });
-
+    
+    $(".darkenizer").on( 'click', function() {
+        $(".header").removeClass("pushed");
+        $(".darkenizer").addClass("transparent");
+        $('.bar').removeClass('animate');
+    });
 
     /*=========================================================================
             Bootstrap Tooltip
