@@ -282,7 +282,7 @@ li {
     left: 100%;
     top: 0;
     position: absolute;
-    width: 100vh;
+    width: 100vw;
     z-index: 3;
 }
 
@@ -295,6 +295,12 @@ li {
     width: 30px;
     height: 55px;
     cursor: pointer;
+}
+
+.mobile-bar-title {
+    margin: 0;
+    padding: 14px 65px;
+    font-size: 20px;
 }
 
 .header .bar,.header .bar:after,.header .bar:before {
@@ -361,7 +367,8 @@ li {
 
 /* === Section Configure === */
 .main-content section {
-    padding: 60px 70px;
+    margin-top: -30px;
+    padding: 90px 70px 60px 70px;
     position: relative;
     border-bottom: solid 1px #EEE;
 }
@@ -461,7 +468,7 @@ li {
     display: block;
     position: absolute;
     right: 0;
-    top: -12px;
+    top: -8px;
     background: var(--primary-color);
 	font-family: 'Poppins', sans-serif;
     font-size: 12px;
@@ -834,9 +841,9 @@ li {
     background-color: var(--secondary-color);
     -webkit-box-shadow: none;
     box-shadow: none;
-    -webkit-transition: width .6s ease;
-    -o-transition: width .6s ease;
-    transition: width .6s ease;
+    -webkit-transition: width 2s ease;
+    -o-transition: width 2s ease;
+    transition: width 2s ease;
 }
 
 /* === Form Control === */
@@ -907,6 +914,7 @@ li {
         -moz-transition: all .3s ease-in-out;
         -o-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
+        margin-top: 50px;
     }
 
     .main-pushed {
@@ -919,7 +927,6 @@ li {
     }
 }
 
-/* === Here comes the hamburger === */
 @media only screen and (max-width: 767px) {
     .welcome {
         padding: 60px !important;
@@ -939,10 +946,6 @@ li {
 
     .blog .item .text {
         margin-top: 25px;
-    }
-
-    .main-content {
-        margin-top: 50px;
     }
 
     .header .avatar {
@@ -965,7 +968,8 @@ li {
 
 @media only screen and (max-width: 480px) {
     .main-content section {
-        padding: 60px 30px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 

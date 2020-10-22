@@ -8,6 +8,7 @@ $(window).load(function() {
 
 $(function(){
     "use strict";
+
     /*=========================================================================
             One Page Nav
     =========================================================================*/
@@ -19,25 +20,38 @@ $(function(){
         easing: 'easeInOutCubic'
     });
 
+
     /*=========================================================================
             Hamburger Menu & Mobile Push menu
     =========================================================================*/
     $(".hamburger-menu, .main-nav ul li a").on( 'click', function() {
         $(".header").toggleClass("pushed");
-        $(".main-content").toggleClass("main-pushed");
         $('.bar').toggleClass('animate');
     });
+
 
     /*=========================================================================
             Bootstrap Tooltip
     =========================================================================*/
     $(".resume-download").tooltip();
 
+
+    /*=========================================================================
+            Progress Bar Animation
+    =========================================================================*/
+    $(".progress-bar").each( (_, elem) => {
+      const $elem = $(elem)
+      const width = $elem.attr("data-width");
+      $elem.css("width", width);
+    })
+
+
     /*=========================================================================
             Welcome & Header Height
     =========================================================================*/
     $("#welcome").css({'height':($(window).height())+'px'});
     $(".header").css({'height':($(window).height())+'px'});
+
 
     /*=========================================================================
             Portfolio filter
@@ -49,6 +63,7 @@ $(function(){
           $( this ).parent().find( 'li.active' ).removeClass( 'active' );
           $( this ).addClass( 'active' );
     });
+
 
     /*=========================================================================
             Magnific Popup Functions
