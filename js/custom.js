@@ -71,14 +71,14 @@ $(function(){
       type: 'image'
     });
     
-    $('.resume-download').magnificPopup({
-      items: {
-        src: '#wip-dialog'
-      },
-      closeBtnInside: true,
-      mainClass: 'mfp-with-zoom',
-      removalDelay: 500,
-    });
+    // $('.resume-download').magnificPopup({
+    //   items: {
+    //     src: '#wip-dialog'
+    //   },
+    //   closeBtnInside: true,
+    //   mainClass: 'mfp-with-zoom',
+    //   removalDelay: 500,
+    // });
 
     $('.work-video').magnificPopup({
       type: 'iframe',
